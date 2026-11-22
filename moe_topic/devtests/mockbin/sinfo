@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+echo "mit_normal_gpu  10  gpu:h100:4,gpu:h200:4  idle"

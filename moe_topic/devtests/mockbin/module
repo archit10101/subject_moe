@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# mock Lmod 'module': logs the call
+: "${MOCK_DIR:?}"
+echo "module $*" >> "$MOCK_DIR/module.log"
+exit 0

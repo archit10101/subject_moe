@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# mock conda: 'conda shell.bash hook' defines a shell function whose 'activate' only records the env name
+: "${MOCK_DIR:?}"
+case "${1:-}" in
+  shell.bash)
+    cat <<'HOOK'
+conda() {
+  if [ "${1:-}" = "activate" ]; then
+    echo "activate ${2:-}" >> "$MOCK_DIR/conda.log"
+    export CONDA_DEFAULT_ENV="${2:-}"
+    return 0
+  fi
+  command conda "$@"
+}
+HOOK
+    ;;
+  env) echo "moe_topic   /mock/envs/moe_topic" ;;
+  *) echo "mock conda $*" >> "$MOCK_DIR/conda.log" ;;
+esac

@@ -9,3 +9,10 @@ __pycache__/
 /moe_lookahead/smoke/
 /moe_lookahead.tar.gz
 .DS_Store
+/moe_topic/data/
+/moe_topic/cache/
+/moe_topic/ckpt/
+/moe_topic/logs/
+/moe_topic/results/
+/moe_topic/smoke/
+/moe_topic/setup_login.log
