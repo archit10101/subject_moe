@@ -1,4 +1,4 @@
- z# Task: topic-aware MoE routing experiment (SLURM package for MIT ORCD, which I submit myself)
+# Task: topic-aware MoE routing experiment (SLURM package for MIT ORCD, which I submit myself)
 
 You are running on **my own computer**. You can't reach the cluster. The work has two phases:
 
