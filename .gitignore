@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+/moe_lookahead/data/
+/moe_lookahead/cache/
+/moe_lookahead/ckpt/
+/moe_lookahead/logs/
+/moe_lookahead/results/
+/moe_lookahead/smoke/
+/moe_lookahead.tar.gz
+.DS_Store

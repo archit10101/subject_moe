@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# mock sbatch: logs args, prints incrementing job ids, adds the job to the mock queue
+: "${MOCK_DIR:?}"
+mkdir -p "$MOCK_DIR"
+printf '%s\n' "$(printf '%s\x1f' "$@")" >> "$MOCK_DIR/sbatch.log"
+name=""; testonly=0; prev=""
+for a in "$@"; do
+  case "$a" in --test-only) testonly=1 ;; --job-name=*) name="${a#*=}" ;; esac
+  if [ "$prev" = "-J" ]; then name="$a"; fi
+  prev="$a"
+done
+if [ "$testonly" = "1" ]; then
+  if [ "${MOCK_TESTONLY_FAIL:-0}" = "1" ]; then echo "sbatch: error: invalid partition" >&2; exit 1; fi
+  echo "sbatch: Job 99999 to start at 2026-01-01T00:00:00 using 8 processors on nodes mock1" >&2; exit 0
+fi
+if [ "${MOCK_SBATCH_FAIL:-0}" = "1" ]; then echo "sbatch: error: mock failure" >&2; exit 1; fi
+n=$(cat "$MOCK_DIR/next_id" 2>/dev/null || echo 1000)
+echo $((n + 1)) > "$MOCK_DIR/next_id"
+echo "$n|$name|PENDING" >> "$MOCK_DIR/queue"
+echo "$n"

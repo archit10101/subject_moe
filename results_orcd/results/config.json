@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "created": "2026-11-21 22:56:27",
+  "model": "base",
+  "model_cfg": {
+    "n_layer": 8,
+    "d_model": 512,
+    "n_head": 8,
+    "d_ff": 1024,
+    "n_exp": 8,
+    "vocab": 50304,
+    "ctx": 1024,
+    "lb_coef": 0.01,
+    "distill_coef": 0.1,
+    "r4_lo": 2,
+    "r4_hi": 51
+  },
+  "hparams": {
+    "lr": 0.001,
+    "min_lr": 0.0001,
+    "warmup_frac": 0.02,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.1,
+    "grad_clip": 1.0,
+    "micro_bs": 32,
+    "grad_accum": 8,
+    "seq_len": 1024,
+    "tokens_per_step": 262144,
+    "data_seed": 0,
+    "lb_coef": 0.01,
+    "distill_coef": 0.1,
+    "quick_val_tokens": 2000000,
+    "precision": "bf16 autocast + TF32",
+    "alpha_schedule": "1 for step<0.1S; linear 1->0 over [0.1S,0.6S); 0 after",
+    "lr_schedule": "linear warmup 2% of steps, cosine to min_lr"
+  },
+  "total_steps": 4577,
+  "total_tokens": 1199833088,
+  "r4_steps": 572,
+  "r4_tokens": 149946368,
+  "tps": 251958.00528366046,
+  "bench": {
+    "r1": {
+      "tps": 251958.00528366046,
+      "step_seconds": 1.0404273509979247,
+      "peak_mem_gib": 27.30602788925171
+    },
+    "r3": {
+      "tps": 297076.74783161597,
+      "step_seconds": 0.8824117064476014,
+      "peak_mem_gib": 27.100118160247803
+    }
+  },
+  "target_minutes": 120.0,
+  "r4_minutes": 25.0,
+  "r4_max_tokens": 150000000.0,
+  "projected_tokens_per_2h": 1814097638.0423553,
+  "capped_by_data": true,
+  "train_tokens_available": 1200000000,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "host": "node2906",
+  "torch": "2.14.1+cu126",
+  "cuda": "12.6",
+  "param_counts": {
+    "total": 110207488,
+    "active_per_token": 51487232,
+    "embedding": 26279936,
+    "non_embedding": 83927552,
+    "router_per_layer": 4096
+  },
+  "data_fingerprint": "0a5972d138c111d6-3b179e6d18d73f73",
+  "synthetic": false,
+  "clusters_featurizer": "idf_bag_rp256",
+  "bench_seconds": 61.69859075546265,
+  "forced_steps": false,
+  "config_hash": "9d8842050be1db05"
+}

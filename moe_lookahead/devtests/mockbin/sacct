@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# mock sacct: every job in sbatch history COMPLETED except ids listed in $MOCK_DIR/failed
+: "${MOCK_DIR:?}"
+ids=""; prev=""
+for a in "$@"; do [ "$prev" = "-j" ] && ids="$a"; prev="$a"; done
+IFS=, ; for id in $ids; do
+  st=COMPLETED; grep -qx "$id" "$MOCK_DIR/failed" 2>/dev/null && st=FAILED
+  case "$*" in
+    *Eligible*) echo "$id|mla_job|$st|2026-11-20T10:00:00|2026-11-20T10:05:00|2026-11-20T10:10:00|2026-11-20T11:00:00|node1|0:0" ;;
+    *) echo "$id|mla_job|$st|1:0|node1" ;;
+  esac
+done

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# mock squeue: prints the mock queue ("id|name|state" matches -o "%i|%j|%T")
+: "${MOCK_DIR:?}"
+echo "$*" >> "$MOCK_DIR/squeue.log"
+[ -f "$MOCK_DIR/queue" ] && cat "$MOCK_DIR/queue"
+exit 0

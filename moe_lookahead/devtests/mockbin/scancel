@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+: "${MOCK_DIR:?}"
+echo "$*" >> "$MOCK_DIR/scancel.log"
+for id in "$@"; do
+  [ -f "$MOCK_DIR/queue" ] && grep -v "^$id|" "$MOCK_DIR/queue" > "$MOCK_DIR/queue.tmp"; mv "$MOCK_DIR/queue.tmp" "$MOCK_DIR/queue"
+done

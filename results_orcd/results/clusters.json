@@ -1,0 +1,357 @@
+{
+  "featurizer": "idf_bag_rp256",
+  "fallback_reason": "MiniLM projected 43.2 min > 30 min to assign all blocks",
+  "k": 8,
+  "sample": 200000,
+  "kmeans_scores": [
+    0.2713369131088257,
+    0.27071696519851685,
+    0.27092140913009644
+  ],
+  "bias": [
+    -0.021350998431444168,
+    0.0209369994699955,
+    -0.024466494098305702,
+    0.058285001665353775,
+    0.03278700262308121,
+    -0.02921449951827526,
+    -0.0005599975120276213,
+    -0.036416999995708466
+  ],
+  "balance_iters": 9,
+  "balance_converged": true,
+  "sample_fractions": [
+    0.14018499851226807,
+    0.10711999982595444,
+    0.13713499903678894,
+    0.0959949940443039,
+    0.11305999755859375,
+    0.1406649947166443,
+    0.12602999806404114,
+    0.1398099958896637
+  ],
+  "sample_rate_blocks_per_s": 36007.21465663849,
+  "projected_assign_minutes": 8.747376130131482,
+  "sizes": {
+    "train": [
+      2649713,
+      1987890,
+      2548399,
+      1801631,
+      2147371,
+      2631376,
+      2373587,
+      2610033
+    ],
+    "val": [
+      21841,
+      14784,
+      20169,
+      14200,
+      16505,
+      21207,
+      18848,
+      20565
+    ]
+  },
+  "fractions": {
+    "train": [
+      0.1413,
+      0.106,
+      0.1359,
+      0.0961,
+      0.1145,
+      0.1403,
+      0.1266,
+      0.1392
+    ],
+    "val": [
+      0.1475,
+      0.0998,
+      0.1362,
+      0.0959,
+      0.1114,
+      0.1432,
+      0.1272,
+      0.1388
+    ]
+  },
+  "table_train_row_pct": [
+    [
+      57.9,
+      32.6,
+      0.1,
+      6.2,
+      0.2,
+      0.7,
+      2.3
+    ],
+    [
+      12.0,
+      5.5,
+      51.4,
+      2.3,
+      3.9,
+      4.4,
+      20.5
+    ],
+    [
+      63.7,
+      29.8,
+      0.1,
+      3.2,
+      0.6,
+      2.1,
+      0.5
+    ],
+    [
+      43.9,
+      24.1,
+      1.1,
+      2.1,
+      0.6,
+      26.4,
+      1.7
+    ],
+    [
+      35.7,
+      15.4,
+      2.4,
+      2.1,
+      36.4,
+      4.2,
+      3.8
+    ],
+    [
+      49.3,
+      45.6,
+      0.2,
+      2.7,
+      0.3,
+      0.4,
+      1.5
+    ],
+    [
+      57.9,
+      16.6,
+      10.9,
+      4.1,
+      1.0,
+      5.0,
+      4.6
+    ],
+    [
+      66.3,
+      27.2,
+      0.1,
+      3.7,
+      0.8,
+      1.2,
+      0.6
+    ]
+  ],
+  "joint_counts": {
+    "train": [
+      [
+        1533184,
+        863576,
+        3345,
+        165212,
+        5878,
+        17443,
+        61075
+      ],
+      [
+        238471,
+        109278,
+        1021719,
+        45610,
+        78276,
+        86989,
+        407547
+      ],
+      [
+        1622074,
+        758966,
+        3598,
+        81045,
+        16228,
+        54761,
+        11727
+      ],
+      [
+        791499,
+        434901,
+        19089,
+        38062,
+        10283,
+        476494,
+        31303
+      ],
+      [
+        767112,
+        329668,
+        51591,
+        46049,
+        782286,
+        89851,
+        80814
+      ],
+      [
+        1297565,
+        1199426,
+        4517,
+        71968,
+        8886,
+        10462,
+        38552
+      ],
+      [
+        1373532,
+        393098,
+        259424,
+        96344,
+        24892,
+        118005,
+        108292
+      ],
+      [
+        1731652,
+        710893,
+        2467,
+        96036,
+        22000,
+        32172,
+        14813
+      ]
+    ],
+    "val": [
+      [
+        12987,
+        7180,
+        30,
+        912,
+        25,
+        135,
+        572
+      ],
+      [
+        1952,
+        998,
+        6935,
+        15,
+        537,
+        714,
+        3633
+      ],
+      [
+        13104,
+        6266,
+        30,
+        147,
+        80,
+        463,
+        79
+      ],
+      [
+        6361,
+        3743,
+        203,
+        31,
+        65,
+        3583,
+        214
+      ],
+      [
+        6069,
+        2790,
+        448,
+        29,
+        5745,
+        642,
+        782
+      ],
+      [
+        10606,
+        9791,
+        46,
+        278,
+        42,
+        66,
+        378
+      ],
+      [
+        11113,
+        3504,
+        2066,
+        153,
+        187,
+        960,
+        865
+      ],
+      [
+        14070,
+        5688,
+        11,
+        290,
+        126,
+        237,
+        143
+      ]
+    ]
+  },
+  "mi_bits_block_majority_source": {
+    "train": 0.43529293221182075,
+    "val": 0.41706537380978836
+  },
+  "samples": {
+    "0": [
+      "Everything is in the details: Irena turning on a light in a darkened room as she murmurs, \"I like the dark, it's friendly\"; her encounter with the unknown catlike woman who stares at her and greets her as a sister (an exchange of glances that lasts only a second but flavors the whole",
+      " which she serves as chairperson, to fight for employees' benefits, earning her much admiration from the staff. She always recalls what Dr. Ho has continually stressed: \"When one drinks water, one must not forget where it comes from\", which means one must put oneself in others' shoes for 'harmony' and",
+      " such an overwhelming reading experience that I had to literally pause for a moment after I finished reading the issue, to sit back and take it all in.\nThe density of the story and art is staggering.\nFraction's plot is straightforward yet full of complexity. It is not only entertaining for the longtime and die-"
+    ],
+    "1": [
+      "SUFFIX;\n    public static final String ESC_FG_YELLOW    = ESC_PREFIX\n                                   ",
+      "                  + SGR_FG_WHITE\n                                      ",
+      "                              + ESC_SUFFIX;\n    public static final String ESC_BGB_RED      = ESC_PREFIX\n  "
+    ],
+    "2": [
+      ", and cinematographer, Nicholas Musuraca.\nThe huge success of Cat People enabled Lewton to keep making, under the guise of B-movie thrillers, movies that are often more like symbolist poems or obscure fetishistic rituals. They are not so much frightening as unnervingly strange and shot through",
+      ", when they are considering how well children's rights are protected in the UK.\nIn 2016, the UN Committee on the Rights of the Child issued recommendations (known as Concluding Observations) telling the Government how it should improve the protection of children's rights in the UK. Every year, we publish State of Children",
+      "au Facebook Page screenshot captured Sept. 9, 2019\nPhotos and an announcement regarding Mielke's political plans briefly appeared on the city's Facebook page, but the post was taken down after critics spoke up. Mielke, in September, said his assistant, Kathi Groeschel, is the Facebook page administrator"
+    ],
+    "3": [
+      "\u043d\u0435. \u0420\u0435\u0436\u0438\u0440\u0430\u043b\u0430 \u0433\u0430 \u0458\u0435 \u041c\u0438\u0440\u0458\u0430\u043d\u0430 \u0421\u0430\u043c\u0430\u0440\u045f\u0438\u045b, \u0430 \u0441\u0446\u0435\u043d\u0430\u0440\u0438\u043e \u0458\u0435 \u043f\u0438\u0441\u0430\u043b\u0430",
+      "   \n Marcella Vitali, Bice Montuschi Simboli, Berti Antonio, pittore (20.9.1830 Faenza, \u2020 14.07.1912 Faenza) in Manfrediana. Bollettino della biblioteca comunale",
+      " works well regardless of the boundary specification.\nThe plot above shows a comparison of surge volumes calculated according to equations (2) and (7), labeled \"OLGA Method\" and \"Proposed Method\" respectively. We can see that filtering out the negative values results in larger surge volumes at lower drain rates. At large"
+    ],
+    "4": [
+      " go to government hospitals because services have been upgraded. So far 1,008 people have received the institutional delivery incentive.\nNawalparasi district borders India, and earlier this year it became a hotspot for Covid-19, as Nepalis returning from India brought the virus home. Hupsekot",
+      " analysis of the sampled accounts on Twitter and users' perceptions regarding information services. Findings: The results of the study revealed that crowdsourcing was not used in the development of information services per se, but it has been used for other purposes. The results also revealed that several factors influenced the adoption of using crowdsourcing to develop",
+      " radiation delivers the optimal dose of radiation to the tumor target volume and minimal or no radiation to normal tissues and organs. As with the IMRT radiation, there would still be an exit beam hitting healthy parts of Justin's brain.\nFiguring proton beam therapy would be the way we would want to go, we decided"
+    ],
+    "5": [
+      " have found to get Amazon Gift Cards. You earn sSagbucks by completing searches through the Swagbucks search engine (you can download a toolbar if you want, or set your search engine to it) \u2014 not for every search, but a decent amount. Admittedly, I don't use Swagbucks a",
+      "More often the not, countries that exploited their natural resources have seen their economies grow, new modern infrastructure built and poverty alleviated. We want to chart the path of prudent management of our natural resources to bring about a positive impact on the lives of our people and our economy.\nWe don't feel that oil exploitation will",
+      " In Brierwood Estates On A Large .8 Acre Lot With No Hoa! Separate Living Space With Private Entrance. Built As Builder's Personal Home. The Beautiful Wrap-around Front Porch And Circular Driveway Are Just The Beginning. Interior Features Include Gorgeous Hardwood Floors Throughout With"
+    ],
+    "6": [
+      " 2018. Please email SurfaceWater@SnoCo.org for more information.<|endoftext|>MainAll NewsCoup\nTurkey extends state of emergency\nArutz Sheva Staff , 1/4/2017, 5:35 AM (Thinkstock)\nTurkey arrests brother of Gulen\nBen Ariel, Canada ,10/",
+      " not truth and therefore such separation will go, even though it will take a long time'\nPBThesisPt1.pdf (application/pdf Object)\ndont know if you are familiar with paul brunton, but he did engage with theosophy for a while, and this thesis l found",
+      " who worked with us to test this community trust idea to the panel who guided selection of our steward organizations. This is a milestone moment for the Bush Foundation, and we are thankful to have had the wisdom and insights of many Black and Native leaders.\n-Jackie & Eileen\nRacial wealth gaps\nThroughout"
+    ],
+    "7": [
+      " insurance policies on everyone in his family and they ended up dead; the subsequent trial of the man who murdered Reverend Miller at the funeral home mourning his latest victim; Harper Lee's involvement as a last gasp effort to produce a book in the 1970s and 80s. The first and last sections were the most interesting, with",
+      "astic online slot version from Microgaming, developed through its licensing agreement with DC Entertainment. It's the software developer's second foray into the Batman franchise, following the hugely successful The Dark Knight\u2122, unveiled in the summer of 2012.\nWhile The Dark Knight was a progressive slot, which meant it offered potentially earth-sh",
+      " For the most part, the SOA initiatives I've seen have only led to extra complexity and reduced productivity in development without ever coming close to the orchestration nirvana envisioned by the architects.\nAs I see it, the positive goal of a Service Oriented Architecture is to eliminate duplication of effort in software projects across"
+    ]
+  },
+  "n_blocks": {
+    "train": 18750000,
+    "val": 148119
+  },
+  "data_fingerprint": "0a5972d138c111d6-3b179e6d18d73f73",
+  "synthetic": false,
+  "device": "cuda",
+  "seconds": 45.82510328292847
+}

@@ -1,0 +1,40 @@
+{
+  "mi_cluster_source_bits": 0.41492175789969005,
+  "n_tokens": 9479168,
+  "first64_fraction": 0.06284465050097224,
+  "status": {
+    "R1": {
+      "state": "done",
+      "step": 4577,
+      "total_steps": 4577
+    },
+    "R3": {
+      "state": "done",
+      "step": 4577,
+      "total_steps": 4577
+    },
+    "R2": {
+      "state": "done",
+      "step": 4577,
+      "total_steps": 4577
+    },
+    "R4": {
+      "state": "done",
+      "step": 572,
+      "total_steps": 572
+    },
+    "R1_seed1": {
+      "state": "done",
+      "step": 4577,
+      "total_steps": 4577
+    },
+    "R3_seed1": {
+      "state": "missing"
+    },
+    "R2_seed1": {
+      "state": "missing"
+    }
+  },
+  "time": 1795339671.80361,
+  "config_hash": "9d8842050be1db05"
+}

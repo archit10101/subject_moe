@@ -1,0 +1,10 @@
+time	jobid	name	stage	tag	dependency	note
+2026-11-21T10:58:49	29956697	mla_prep	prep			
+2026-11-21T10:58:50	29956698	mla_clusters	clusters		afterok:29956697	
+2026-11-21T10:58:50	29956699	mla_bench	bench		afterok:29956698	
+2026-11-21T10:58:51	29956700	mla_train_R1	train	R1	afterok:29956699	
+2026-11-21T10:58:53	29956701	mla_train_R3	train	R3	afterok:29956699	
+2026-11-21T10:58:53	29956702	mla_train_R2	train	R2	afterok:29956699	
+2026-11-21T10:58:53	29956704	mla_train_R4	train	R4	afterok:29956699	
+2026-11-21T10:58:53	29956705	mla_train_R1_seed1	train	R1_seed1	afterok:29956699	
+2026-11-21T10:58:55	29956706	mla_eval	eval		afterany:29956700:29956701:29956702:29956704:29956705	
